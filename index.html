@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Renderização WebGL</title>
+    <style>
+      canvas {
+        display: block;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
+  </head>
+  <body>
+    <canvas id="canvas" width="800" height="600"></canvas>
+
+    <label for="near">Near:</label>
+    <input
+      type="range"
+      id="near"
+      min="0.1"
+      max="10"
+      step="0.1"
+      value="1"
+    /><br />
+
+    <label for="far">Far:</label>
+    <input type="range" id="far" min="10" max="100" step="1" value="50" /><br />
+
+    <label for="cameraZ">Posição da câmera:</label>
+    <input
+      type="range"
+      id="cameraZ"
+      min="1"
+      max="10"
+      step="0.1"
+      value="5"
+    /><br />
+
+    <label for="fovy">Ângulo vertical do campo de visão (fovy):</label>
+    <input
+      type="range"
+      id="fovy"
+      min="20"
+      max="120"
+      step="1"
+      value="60"
+    /><br />
+
+    <script src="script2.js"></script>
+  </body>
+</html>
